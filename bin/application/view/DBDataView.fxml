@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.DBViewController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="165.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="503.0" minWidth="10.0" prefWidth="435.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+   </rowConstraints>
+   <children>
+      <Label text="  Adresacja IP:" GridPane.rowIndex="2" />
+      <Label text="  Identyfikator VPLS:" GridPane.rowIndex="3" />
+      <Label text="  Przepustowość Bandwidth:" GridPane.rowIndex="4" />
+      <Label text="  Identyfikator PRA Line:" GridPane.rowIndex="5" />
+      <Label text="  Łącze PRA Line:" GridPane.rowIndex="6" />
+      <Label text="  DDI Range:" GridPane.rowIndex="7" />
+      <Label text="  Cena Przepustowość:" GridPane.rowIndex="8" />
+      <Label text="  Cena Łącze PRA Line:" GridPane.rowIndex="9" />
+      <Label fx:id="IPAdress" prefHeight="17.0" prefWidth="479.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label fx:id="VPLSid" prefHeight="17.0" prefWidth="457.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Label fx:id="Bandwidth" prefHeight="17.0" prefWidth="473.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Label fx:id="PRAid" prefHeight="17.0" prefWidth="504.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <Label fx:id="PRAline" layoutX="10.0" layoutY="20.0" prefHeight="17.0" prefWidth="580.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <Label fx:id="DDI" layoutX="10.0" layoutY="20.0" prefHeight="17.0" prefWidth="642.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <Label fx:id="BandwidthPrice" layoutX="10.0" layoutY="20.0" prefHeight="17.0" prefWidth="622.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <Label fx:id="PRAPrice" prefHeight="17.0" prefWidth="645.0" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+      <Pane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="10">
+         <children>
+            <Button fx:id="btn_quit" alignment="CENTER" contentDisplay="RIGHT" layoutX="299.0" layoutY="3.0" mnemonicParsing="false" onAction="#btnQuitAction" prefHeight="30.0" prefWidth="122.0" text="WYJDŹ" />
+         </children>
+      </Pane>
+      <Label text="  Miasto:" />
+      <Label text="  Nazwa Oddziału:" GridPane.rowIndex="1" />
+      <Label fx:id="lbl_m" prefHeight="17.0" prefWidth="442.0" GridPane.columnIndex="1" />
+      <Label fx:id="lbl_o" prefHeight="17.0" prefWidth="439.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+   </children>
+</GridPane>
